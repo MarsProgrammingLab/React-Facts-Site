@@ -1,8 +1,9 @@
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: #2f4f4f;
+  background-image: url("./img/react-background.jpeg");
+  background-repeat: round;
 }
 
 .nav {
@@ -17,7 +18,7 @@ body {
   font-weight: 600;
   color: white;
 }
-.nav .logo {
+.nav > .logo {
   display: flex;
   justify-content: flex-start;
   gap: 10px;
@@ -25,6 +26,19 @@ body {
 .nav .facts {
   color: #00ffff;
   font-size: 30px;
+  /* h1 title */
+  letter-spacing: -0.05em;
+}
+.main--ul {
+  margin-top: 45px;
+  max-width: 350px;
+}
+
+.main > h1 {
+  /* h1 title */
+  font-size: 39px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
 }
 
 .img {
@@ -37,8 +51,13 @@ body {
   padding: 10px 25px;
 }
 
-.main > li {
-  padding: 30px;
+.main--ul > li {
+  padding-block: 10px;
+}
+
+.main--ul > li::marker {
+  color: #00ffff;
+  font-size: 1.5em;
 }
 
 .footer {
